@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Content Section -->
+    <h1 id="top">Riley Fitzpatrick</h1>
+    <h5>Student at BYU</h5>
+    <h5> Testing Bold Font</h5>
+    <a href="https://chat.openai.com/" target="_blank">ChatBot</a>
+    <br>
+    <a href="html/resume.html">Resume</a>
+    <br>
+    <a href="html/about.html">About</a>
+    <p>I don't want to do more coding lol.</p>
+    <p class="rizz">This paragraph has too much rizz/p>
+
+
+    <!-- Images -->
+    <div id="images">
+        <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w600/2023/10/free-images.jpg"
+            alt="Picture of Me" style="width: 500px;"> <!-- External Image -->
+    </div>
+
+    <!-- External JavaScript -->
+    <script>
+        // JavaScript to control the typewriter effect
+        document.addEventListener('DOMContentLoaded', function () {
+            const typewriterText = document.querySelector('p');
+            const text = typewriterText.textContent;
+            typewriterText.textContent = '';
+            let i = 0;
+            function type() {
+                if (i < text.length) {
+                    typewriterText.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, 100); // Adjust typing speed (milliseconds)
+                }
+            }
+            type();
+        });
+    </script>
+    <a href="https://example.com" target="_blank">
+        <img src="img/Fitz.jpg" alt="Description of the image">
+    </a>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mKdjycj-7eE?si=7p_1gn-TpPKba0Vq"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <a href="#top">Link back to the top</a>
+</body>
+
+</html>
